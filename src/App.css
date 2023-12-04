@@ -12,3 +12,9 @@ body {
 a {
   text-decoration: none;
 }
+@layer utilities {
+  .custom-inset-x {
+    left: 41%;
+    right: 44%;
+  }
+}
