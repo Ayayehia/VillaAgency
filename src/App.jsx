@@ -4,6 +4,7 @@ import GallerySlider from "./Components/GallerySlider";
 import FeaturedSection from "./Components/FeaturedSection";
 import VideoSection from "./Components/VideoSection";
 import FactWrapper from "./Components/FactWrapper";
+import DealSection from "./Components/DealSection";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <FeaturedSection />
       <VideoSection />
       <FactWrapper />
+      <DealSection />
     </>
   );
 }

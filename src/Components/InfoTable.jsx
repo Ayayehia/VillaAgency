@@ -2,13 +2,10 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import EnhancedEncryptionIcon from "@mui/icons-material/EnhancedEncryption";
-
+import Modal from "./Ui/Modal";
 const InfoTable = () => {
   return (
-    <section
-      className=" p-4 m-3 rounded-xl lg:mt-20 "
-      style={{ boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.15)" }}
-    >
+    <Modal>
       <ul>
         <li className="flex p-4">
           <section className="p-3 ">
@@ -69,7 +66,7 @@ const InfoTable = () => {
           </h2>
         </li>
       </ul>
-    </section>
+    </Modal>
   );
 };
 
