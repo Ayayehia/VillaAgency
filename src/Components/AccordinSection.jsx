@@ -56,6 +56,7 @@ export default function CustomizedAccordions() {
           aria-controls="panel1d-content"
           id="panel1d-header"
           style={{ backgroundColor: "#fafafa" }}
+          className="hover:text-orange-600"
         >
           <Typography>Best Useful Link?</Typography>
         </AccordionSummary>
@@ -81,6 +82,7 @@ export default function CustomizedAccordions() {
           style={{ backgroundColor: "#fafafa" }}
           aria-controls="panel2d-content"
           id="panel2d-header"
+          className="hover:text-orange-600"
         >
           <Typography>How Does this work?</Typography>
         </AccordionSummary>
@@ -101,6 +103,7 @@ export default function CustomizedAccordions() {
           style={{ backgroundColor: "#fafafa" }}
           aria-controls="panel3d-content"
           id="panel3d-header"
+          className="hover:text-orange-600"
         >
           <Typography>Why is the villa agency the best?</Typography>
         </AccordionSummary>

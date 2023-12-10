@@ -19,11 +19,12 @@ const VideoSection = () => {
             className="h-1/4 w-3/4 relative rounded-full md:w-1/3 md:h-1/5 lg:w-1/3  "
             src={Furnitureport}
           />
-
+          {/* <section className="bg-orange-200 absolute top-[54%]  left-[40%]  rounded-full z-50 p-10 md:left-[46%] lg:top-[55%]"> */}
           <PlayCircleFilledIcon
-            className="absolute top-[54%]  left-[40%]  text-orange-500 text-6xl cursor-pointer md:top-[56%] md:left-[46%] lg:top-[55%] lg:left-[47%] xl:top-[55%] xl:left-[48%]"
+            className="absolute top-[54%]  left-[40%]  text-orange-500 text-6xl cursor-pointer md:top-[56%] md:left-[46%] lg:top-[55%] lg:left-[47%] xl:top-[55%] xl:left-[48%] "
             style={{ fontSize: 59 }}
           />
+          {/* </section> */}
         </>
       </section>
     </section>

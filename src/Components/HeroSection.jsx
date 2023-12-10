@@ -4,7 +4,7 @@ import imgone from "../assets/Images/Villaone.jpg";
 import imgtwo from "../assets/Images/Buildingone.jpg";
 import imgthree from "../assets/Images/Villatwo.jpg";
 
-const GallerySlider = () => {
+const HeroSection = () => {
   const images = [imgone, imgtwo, imgthree];
   const Text = [
     [
@@ -62,4 +62,4 @@ const GallerySlider = () => {
   );
 };
 
-export default GallerySlider;
+export default HeroSection;
