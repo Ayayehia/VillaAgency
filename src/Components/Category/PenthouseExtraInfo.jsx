@@ -1,5 +1,5 @@
 import Button from "../Ui/Button";
-import Image from "../../assets/Images/PenthouseInfo-small.jpg";
+import Image from "../../assets/Images/PentHouseInfo-small.jpg";
 
 const PenthouseExtraInfo = () => {
   return (
