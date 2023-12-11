@@ -10,6 +10,8 @@ import Furnitureport from "./assets/Images/furnitureport-medium.jpg";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import MapContainer from "./Components/Ui/Map";
 import ContactInfo from "./Components/Contact/ContactInfo";
+import Form from "./Components/Contact/Form";
+import Footer from "./Components/Footer";
 function App() {
   const video = (
     <PlayCircleFilledIcon
@@ -31,12 +33,18 @@ function App() {
       <FactWrapper />
       <DealSection />
       <Properties />
-      <VideoSection
-        Tagline={"|Video View"}
-        title={"Get Closer View & Different Feeling"}
-        content={<MapContainer />}
-      />
-      <ContactInfo />
+      <span className="lg:flex lg:w-full items-center   ">
+        <span className="lg:flex lg:flex-col lg:w-[60%]">
+          <VideoSection
+            Tagline={"|Video View"}
+            title={"Get Closer View & Different Feeling"}
+            content={<MapContainer />}
+          />
+          <ContactInfo />
+        </span>
+        <Form newwidth={true} />
+      </span>
+      <Footer />
     </>
   );
 }

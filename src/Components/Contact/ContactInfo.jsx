@@ -15,7 +15,7 @@ const ContactInfo = () => {
     },
   ];
   return (
-    <>
+    <section className="lg:flex mt-8">
       {Info.map((text) => (
         <Modal>
           <section className="flex gap-4">
@@ -26,13 +26,15 @@ const ContactInfo = () => {
               {text.icon}
             </span>
             <span className="flex flex-col" key={text.title}>
-              <article className="font-bold text-xl">{text.Details}</article>
+              <article className="font-bold text-xl lg:text-sm">
+                {text.Details}
+              </article>
               <article className="text-[#aaaaaa]">{text.title}</article>
             </span>
           </section>
         </Modal>
       ))}
-    </>
+    </section>
   );
 };
 

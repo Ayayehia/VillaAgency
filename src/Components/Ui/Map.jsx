@@ -20,7 +20,12 @@ const MapContainer = () => {
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyCozPNxR_UZ2734eYbwJgu3kX8J6dLTtHU">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={8} center={defaultCenter}>
+      <GoogleMap
+        mapContainerStyle={mapStyles}
+        zoom={8}
+        center={defaultCenter}
+        className="lg:w-50%"
+      >
         <Marker position={markerPosition} />
       </GoogleMap>
     </LoadScript>

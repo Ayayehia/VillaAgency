@@ -173,7 +173,7 @@ export default function Properties() {
               </ul>
               <hr />
               <span className="flex w-full justify-center items-center">
-                <button className="bg-black text-white px-8 rounded-xl h-10 text-lg mt-8 ">
+                <button className="bg-black text-white px-8 rounded-xl h-10 text-lg mt-8 hover:bg-[#f35525] ">
                   Schedule a visit
                 </button>
               </span>
