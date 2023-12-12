@@ -7,7 +7,7 @@ import Image from "../assets/Images/contactus-medium.jpg";
 import SectionHeading from "../Components/SectionHeading";
 const ContactUs = () => {
   return (
-    <section className=" flex flex-col  gap-4 ">
+    <section className=" flex flex-col justify-between h-full gap-4 ">
       <PageHeading
         title={"Contact Us"}
         tagline={"Home/Contact Us"}
