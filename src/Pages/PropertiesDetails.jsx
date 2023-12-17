@@ -13,7 +13,7 @@ const PropertiesDetails = () => {
         tagline={"Home/Single Property"}
         image={Image}
       />
-      <span className="lg:flex md:mt-16 lg:mt-28">
+      <span className="lg:flex mt-16 lg:mt-28">
         <SingleProperty />
         <InfoTable />
       </span>
