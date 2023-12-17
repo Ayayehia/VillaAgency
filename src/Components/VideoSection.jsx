@@ -1,7 +1,7 @@
 // import FurnitureImage from "../assets/Images/Furniture-medium.jpg";
 // import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import Furnitureport from "../assets/Images/furnitureport-medium.jpg";
-import MapContainer from "./Ui/Map";
+import MapContainer from "./Shared/Map";
 const VideoSection = ({ Tagline, title, backgroungImage, content, Image }) => {
   return (
     <section className="mt-14">

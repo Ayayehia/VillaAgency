@@ -5,10 +5,10 @@ import FactWrapper from "../Components/FactWrapper";
 import DealSection from "../Components/DealSection";
 import Properties from "../Components/PropertiesSection";
 import Furnitureport from "../assets/Images/furnitureport-medium.jpg";
-import MapContainer from "../Components/Ui/Map";
+import MapContainer from "../Components/Shared/Map";
 import ContactInfo from "../Components/Contact/ContactInfo";
 import Form from "../Components/Contact/Form";
-import Footer from "../Components/Footer";
+import Footer from "../Components/Shared/Footer";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 const Landing = () => {
   const video = (
@@ -29,7 +29,9 @@ const Landing = () => {
       />
       <FactWrapper />
       <DealSection />
+
       <Properties />
+
       <span className="lg:flex lg:w-full items-center   ">
         <span className="lg:flex lg:flex-col lg:w-[60%]">
           <VideoSection

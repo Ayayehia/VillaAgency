@@ -1,6 +1,6 @@
 import FeatureImage from "./FeatureImage";
 import FeatureTitle from "./FeatureTitle";
-import CustomizedAccordions from "./AccordinSection";
+import CustomizedAccordions from "./Shared/AccordinSection";
 import InfoTable from "./InfoTable";
 const FeaturedSection = () => {
   return (

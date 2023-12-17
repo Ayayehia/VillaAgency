@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionHeading = () => {
   return (
-    <article className="flex flex-col justify-start z-50 mt-[20%] md:mt-[15%] p-8 gap-4 lg:w-1/2">
+    <article className="flex flex-col justify-start z-50 mt-[20%] md:mt-[15%] p-8 gap-4 lg:w-1/2 lg:text-3xl">
       <h3 className="text-[#ee626b] text-md font-bold">|Contact Us</h3>
       <h2 className="uppercase font-extrabold text-2xl">
         Get In Touch with our Agents
@@ -13,7 +13,9 @@ const SectionHeading = () => {
         pariatur beatae modi? Dolore voluptate eligendi, laudantium odio
         voluptates a non consequuntur aspernatur nisi vitae reiciendis deleniti
         ab magni distinctio ullam totam, expedita aliquid molestiae et! Officiis
-        porro minima ad?
+        porro minima ad?Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Laudantium dolore ipsam tenetur doloribus eveniet magnam corrupti
+        tempora recusandae, vel eaque!
       </p>
     </article>
   );

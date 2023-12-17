@@ -28,14 +28,18 @@ const Header = () => {
         {visible ? (
           <ul className="absolute bg-white w-11/12 top-14 p-8 lg:hidden text-center z-50">
             <NavLink to="/">
-              <li className="p-2 hover:text-orange-600">home</li>
+              <li className="p-2 hover:text-orange-600 ">home</li>
             </NavLink>
 
             <hr />
-            <li className="p-2 hover:text-orange-600">properties</li>
+            <NavLink to="properties">
+              <li className="p-2 hover:text-orange-600">properties</li>
+            </NavLink>
             <hr />
+            <NavLink to="single">
+              <li className="p-2 hover:text-orange-600">property details</li>
+            </NavLink>
 
-            <li className="p-2 hover:text-orange-600">property detial</li>
             <hr />
             <NavLink to="contactus">
               <li className="p-2 hover:text-orange-600">contact us</li>
@@ -43,14 +47,27 @@ const Header = () => {
             <hr />
           </ul>
         ) : null}
-        <ul className="flex justify-around w-10/12 lg:flex lg:justify-around hidden ">
+        <ul className="flex justify-around w-10/12 lg:flex lg:justify-around hidden uppercase ">
           <NavLink to="/">
-            <li>home</li>
+            <li className="lg:text-xl font-semibold hover:text-orange-600">
+              home
+            </li>
           </NavLink>
-          <li>properties</li>
-          <li> property detial</li>
+          <NavLink to="properties">
+            <li className="lg:text-xl font-semibold hover:text-orange-600">
+              properties
+            </li>
+          </NavLink>
+          <NavLink to="single">
+            <li className="lg:text-xl font-semibold hover:text-orange-600">
+              property details
+            </li>
+          </NavLink>
+
           <NavLink to="contactus">
-            <li>contact us</li>
+            <li className="lg:text-xl font-semibold hover:text-orange-600">
+              contact us
+            </li>
           </NavLink>
           {/* //Addding new feature */}
           <Button />
