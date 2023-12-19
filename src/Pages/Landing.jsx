@@ -10,7 +10,7 @@ import ContactInfo from "../Components/Contact/ContactInfo";
 import Form from "../Components/Contact/Form";
 import Footer from "../Components/Shared/Footer";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
-const Landing = () => {
+const Landing = ({ form, scroll }) => {
   const video = (
     <PlayCircleFilledIcon
       className="absolute top-[54%]  left-[40%]  text-orange-500 text-6xl cursor-pointer md:top-[56%] md:left-[46%] lg:top-[55%] lg:left-[47%] xl:top-[55%] xl:left-[48%] "
@@ -30,7 +30,7 @@ const Landing = () => {
       <FactWrapper />
       <DealSection />
 
-      <Properties />
+      <Properties scroll={scroll} />
 
       <span className="lg:flex lg:w-full items-center   ">
         <span className="lg:flex lg:flex-col lg:w-[60%]">
@@ -41,7 +41,7 @@ const Landing = () => {
           />
           <ContactInfo />
         </span>
-        <Form newwidth={true} />
+        <Form newwidth={true} form={form} />
       </span>
       <Footer />
     </>

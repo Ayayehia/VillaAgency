@@ -117,7 +117,11 @@ const products = [
   // More products...
 ];
 
-export default function Properties() {
+export default function Properties({ scroll }) {
+  const handleClick = () => {
+    console.log("Button clicked");
+    scroll();
+  };
   return (
     <div className="bg-white  mt-24">
       {/* mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 */}
@@ -173,7 +177,10 @@ export default function Properties() {
               </ul>
               <hr />
               <span className="flex w-full justify-center items-center">
-                <button className="bg-black text-white px-8 rounded-xl h-10 text-lg mt-8 hover:bg-[#f35525] ">
+                <button
+                  onClick={handleClick}
+                  className="bg-black text-white px-8 rounded-xl h-10 text-lg mt-8 hover:bg-[#f35525] "
+                >
                   Schedule a visit
                 </button>
               </span>

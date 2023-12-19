@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DealHeading from "./DealHeading";
 import DealTable from "./DealTable";
-const DealSection = () => {
+const DealSection = ({ scroll }) => {
   const deals = ["Apartment", "Villa House", "Penthouse"];
   const [category, SetCategory] = useState("Apartment");
   return (
@@ -11,7 +11,7 @@ const DealSection = () => {
         categorysetting={SetCategory}
         category={category}
       />
-      <DealTable category={category} />
+      <DealTable scroll={scroll} category={category} />
     </main>
   );
 };

@@ -1,10 +1,10 @@
 import Modal from "../Ui/Modal";
 
-const Form = ({ newwidth }) => {
+const Form = ({ newwidth, form }) => {
   return (
     <section className="mt-9 lg:mt-12  lg:z-50  2xl:w-[20%]">
       <Modal newwidth={newwidth}>
-        <form>
+        <form ref={form}>
           <div className="sm:col-span-4 p-2 ">
             <label
               htmlFor="username"

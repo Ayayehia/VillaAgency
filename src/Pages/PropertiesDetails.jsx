@@ -5,7 +5,7 @@ import DealSection from "../Components/DealSection";
 import Footer from "../Components/Shared/Footer";
 import SingleProperty from "../Components/SingleProperty";
 import InfoTable from "../Components/InfoTable";
-const PropertiesDetails = () => {
+const PropertiesDetails = ({ scroll }) => {
   return (
     <section className="flex flex-col">
       <PageHeading
@@ -19,7 +19,7 @@ const PropertiesDetails = () => {
       </span>
 
       <AccordinSection />
-      <DealSection />
+      <DealSection scroll={scroll} />
       <Footer />
     </section>
   );

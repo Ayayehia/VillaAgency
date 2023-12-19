@@ -5,7 +5,7 @@ import PenthouseInfo from "./Category/PenthouseInfo";
 import ApartmentExtraInfo from "./Category/ApartmentExtraInfo";
 import VillaExtraInfo from "./Category/VillaExtraInfo";
 import PenthouseExtraInfo from "./Category/PenthouseExtraInfo";
-const DealTable = ({ category }) => {
+const DealTable = ({ category, scroll }) => {
   return (
     <section className="lg:flex lg:flex-row justify-evenly text-center">
       <Modal>
@@ -20,11 +20,11 @@ const DealTable = ({ category }) => {
         ) : null}
       </Modal>
       {category === "Apartment" ? (
-        <ApartmentExtraInfo />
+        <ApartmentExtraInfo scroll={scroll} />
       ) : category === "Villa House" ? (
-        <VillaExtraInfo />
+        <VillaExtraInfo scroll={scroll} />
       ) : (
-        <PenthouseExtraInfo />
+        <PenthouseExtraInfo scroll={scroll} />
       )}
     </section>
   );

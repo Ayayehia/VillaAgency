@@ -16,6 +16,7 @@ const VideoSection = ({ Tagline, title, backgroungImage, content, Image }) => {
         <p className="text-white text-3xl space-x-1">{title}</p>
         <>
           <img
+            loading="lazy"
             className="h-1/4 w-3/4 relative rounded-full md:w-1/3 md:h-1/5 lg:w-1/3  "
             src={backgroungImage}
           />

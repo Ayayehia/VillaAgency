@@ -1,9 +1,9 @@
 import { Paper, Typography } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
-import imgone from "../assets/Images/Villaone.jpg";
-import imgtwo from "../assets/Images/Buildingone.jpg";
-import imgthree from "../assets/Images/Villatwo.jpg";
-
+import imgone from "../assets/Images/Villaonee.webp";
+import imgtwo from "../assets/Images/Buildingone.webp";
+import imgthree from "../assets/Images/Villatwo.webp";
+//using webp for lighter images size
 const HeroSection = () => {
   const images = [imgone, imgtwo, imgthree];
   const Text = [
@@ -29,7 +29,7 @@ const HeroSection = () => {
   //   the text element
   const TextRendering = (
     <Typography className="absolute z-50 w-9/12 text-white text-6xl font-extrabold uppercase ">
-      <section className="text-xs w-1/2 pr-36 p-1 bg-white text-black whitespace-nowrap lg:w-1/4 lg:py-4 lg:px-1 lg:text-center ">
+      <section className="text-xs w-[100px] pr-36 p-1 bg-white text-black whitespace-nowrap lg:w-1/4 lg:py-4 lg:px-1 lg:text-center mb-4">
         {textLabel.map((text, index) => (
           <h3 key={index}>{text[index]}</h3>
         ))}
@@ -54,7 +54,9 @@ const HeroSection = () => {
             className="flex flex-col justify-center items-center w-full  "
           >
             {TextRendering}
-            <Typography className=" relative  ">{<img src={img} />}</Typography>
+            <Typography className=" relative  ">
+              {<img fetchpriority="high" src={img} />}
+            </Typography>
           </Paper>
         ))}
       </Carousel>

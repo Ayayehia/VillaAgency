@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import CloseIcon from "@mui/icons-material/Close";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 // import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Button from "./Ui/Button";
-const Header = () => {
+const Header = ({ scroll }) => {
   const [visible, SetVisible] = useState(false);
+  //Handeling the side nav to close when changing pages
+  const location = useLocation();
+  useEffect(() => {
+    SetVisible(false);
+  }, [location]);
 
   const menuDropdown = () => {
     SetVisible(!visible);
@@ -26,7 +31,7 @@ const Header = () => {
           )}
         </section>
         {visible ? (
-          <ul className="absolute bg-white w-11/12 top-14 p-8 lg:hidden text-center z-50">
+          <ul className="absolute bg-white w-11/12 top-14 p-8 lg:hidden text-center z-50 uppercase">
             <NavLink to="/">
               <li className="p-2 hover:text-orange-600 ">home</li>
             </NavLink>
@@ -70,7 +75,7 @@ const Header = () => {
             </li>
           </NavLink>
           {/* //Addding new feature */}
-          <Button />
+          <Button scroll={scroll} />
           {/* //Addding new feature */}
         </ul>
       </nav>
